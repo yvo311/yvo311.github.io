@@ -1,0 +1,168 @@
+<!--
+	ICT580 - 26
+	Assignment 2: Main HTML
+    Yvonne Chan
+	Nov 12, 2018
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+    <!--Head Part-->
+    <head>
+        <!--my stylesheet-->
+    <link rel="stylesheet" href="CSS/A2_FPstyle.css">
+	   <meta charset="utf-8">
+       <title>Joan's feedback</title>
+    </head>
+
+    <!--Boday/Content-->
+    <body>
+        <!--the whole content style-->
+        <div id="card_content">
+        <main>
+        <table>
+            <!--header of the table-->
+                <!--Header Section-->
+                <thead >                                
+                    <!--Logo section-->
+                    <div id="thead_style">
+                    <img  id="logo" src="assignment2_res/logo.png" alt="Joan's tacos logo">
+                
+                    <p >Thank you for taking the time to fill out feedback
+                    </p>
+                    </div>
+                  
+                   
+        
+                </thead>
+            
+            
+                <tbody>
+                    <!--Row 1-->
+                    
+                    <tr>
+                        <th>                                    
+                    
+                        <h3>About your visit</h3>
+                        
+                        <div id="List_style">
+                        <p>
+                            <!--Drop-Down List-->
+                            <b>How much did you spend?</b>&nbsp;&nbsp;&nbsp;
+                        
+                            <select name="money_spend">
+                            <option value="<$10">less than $10</option>
+                            <option value="10-20">$10-20</option>
+                            <option value="20-30">$20-30</option>
+                            <option value="30-40">$30-40</option>
+                            <option value=">$40">more than $40</option>
+                            </select>
+                        </p>
+                        
+                        <a>
+                            <!--Group Controls-->
+                            <form name="order" action="order.php" method="post">
+                            <fieldset>
+                                <legend><b>What was your order?</b></legend>
+                        
+                                <input type="checkbox" name="order1" id="order1" value="Taco" checked><label for="order1">Taco</label>
+                        
+                                <input type="checkbox" name="order2" id="order2" value="Burritos"><label for="order2">Burritos</label>
+                        
+                                <input type="checkbox" name="order3" id="order3" value="Quesadilas"><label for="order3">Quesadilas</label>
+
+                            </fieldset>
+                                <br><br>
+                        
+                            <fieldset>
+                                <legend><b>how was your experience?</b></legend>
+                        
+                                <input type="radio" name="experience" id="experience1" value="NotBad"><label for="experience1">Not  bad</label>
+                        
+                                <input type="radio" name="experience" id="experience2" value="Good" checked><label for="experience2">Good</label>
+                        
+                                <input type="radio" name="experience" id="experience3" value="GreatWork"><label for="experience3">Great Work</label>
+
+                            </fieldset>
+                            </form>
+                        </a>
+                        
+                        </div>
+                     
+                        <div id="Off_style">
+                            <h2>How to get 30% off:</h2>
+                            <a >There are many variations of passages of Lorem Ipsum avaliable, but the majority have suffered alteration in some form, by injected humour, or radomised words which don't look even slightly believable.</a> 
+                        </div>
+                            
+                        </th>
+                    </tr>
+ 
+                    <!--Row 2-->
+                    <tr>
+                        <th >
+                        <!--About you-->
+                        <div>
+                        <h3>About you</h3>
+                        <!--Text Field-->
+                        <div>
+                            <label id="Form_label" for="name">First, last name<a id="form_required">*</a></label><input id="Form_input" type="text" name="name" id="name" accesskey="F" required validate pattern="[a-zA-Z0-9]+"><br><br>
+                
+                            <label id="Form_label" for="email">Email<a id="form_required">*</a></label><input   id="Form_input" type="text" name="email" id="emil" accesskey="E" required validate pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/"><br><br>
+                
+                            <label id="Form_label" for="telephone">Telephone</label><input   id="Form_input" type="text" name="telephone" id="telephone" accesskey="T" validate pattern="\d{3}[\-]\d{3}[\-]\d{4}"><br><br>
+                
+                            <label id="Form_label" for="zip">Zip Code</label><input   id="Form_input" type="text" name="zip" id="zip" accesskey="Z" validate
+                            pattern="/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/"><br><br>
+                
+                            <label id="Form_label" for="message">Message<a id="form_required">*</a></label><textarea required id="Form_input" name="message" validate placeholder="message" >
+                            </textarea>    
+                            
+                            <br><br>
+                            </div>
+                        </div>
+                        </th>   
+                    </tr>
+                    
+                    <!--Row 3-->
+                    <tr>
+                        <th>
+                            <!--Send us an image of your visit-->
+                            <div>
+                            <h3>Sent us an image of your visit</h3>
+                
+                                <form name="upload_image" action="sendemail.php"
+                                method="post"       enctype="multipart/form-data">
+                            <p id="Form_label">Attach only images:</p>
+                            <input id="Form_input" type="file" name="fileupload" accept="image/x-png">
+                
+                            </form>
+                            </div>
+                        </th>
+                    </tr>
+                    
+                    <tr>
+                        <th>
+                            <a>
+                                <input class="button_submit" type="submit" name="message" value="Submit" onClick="return alert('Thanks for your feedback!');">
+                            </a>
+                        </th>
+                    </tr>
+                    
+                     
+                </tbody>
+                       
+            
+        </table>
+            </main>
+        </div>
+    </body>
+    
+    <!--Footer Part-->
+    <footer>
+
+         
+           
+ 
+    
+    </footer>
+</html>

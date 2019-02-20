@@ -1,0 +1,184 @@
+<!--
+    ICT 580-26
+    Nov 19, 2018
+    Yvonne Chan
+    Course Project: 1st Option
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Nel Nail Princess</title>
+        
+        <!--CSS stylesheet-->
+         <link type="text/css" rel="stylesheet" href="css/YC_project.css">
+        
+        <!--font style-->
+        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet"> 
+        
+    </head>
+    
+    <body>
+        <div>
+            <p class="logo">
+                <img  src="images/crown.png" alt="crown logo">
+                <b>Nel Nail Princess</b>
+            </p>
+            <header>
+            <!--navigator-->
+                <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                
+                    <li><a href="#About_us">About us</a></li>
+                
+                    <li><a href="#Services">Services</a></li> 
+                
+                    <li><a href="#Styles">Styles</a></li>
+                
+                    <li><a href="#Feedback">Feedback</a></li>	
+
+                </ul>
+                </nav>
+    
+            </header>
+            
+        
+        <!--timeline-->
+        <mian>
+        <div class="timeline">
+            <!--card-->
+            <div class="container left">
+                <!--card's content-->
+                <div class="content">
+                    <h1 id="About_us">About Us</h1>
+                    
+                    <hr>
+                    <p>address: 1234 1st SW<p>
+                    <p>contact: (000)123-4124</p>
+                    <p>hour: (M-F:1000-2100)</p>
+                    <details>
+							  <summary class="readMore">MORE ABOUT US</summary>	
+	               <p>We are happy to help you</p>		
+                    
+                    </details>
+                </div>
+            </div>
+            
+            <!--card 2-->
+            <div class="container right">
+                <!--card's content-->
+                <div class="content">
+                    <h1 id="Services">Services</h1>
+                    
+                    <hr>
+                    <p>$30 for 5 finger<p>
+                    <p>(min 5 fingers)</p>
+                    
+                    <details>
+							  <summary class="readMore">VIDEO</summary>	
+	                           <video width="320" height="240" controls>
+                                <source src="media/20181007_210855.mp4" type="video/mp4" alt="Video for painting nails">
+ 
+                               </video>
+                       
+                    		
+                    
+                    </details>
+                </div>
+            </div>
+            
+            <!--card 3-->
+            <div class="container left">
+                <!--card's content-->
+                <div class="content">
+                      <h1 id="Styles">Styles</h1>
+                    
+                    <hr>
+                    <p>Option 1</p>
+                    <details>
+							  <summary class="readMore">PICTURE</summary>	
+	                           <p><img width="320" height="240" src="images/marble_nail.jpg" alt="marble nails"></p>
+                    </details>
+                    
+                    <p>Option 2</p>
+                    <details>
+							  <summary class="readMore">PICTURE</summary>	
+	                           <p><img width="320" height="240" src="images/pink_nail.jpg" alt="pink nails"></p>
+                    </details>
+                    
+                </div>
+            </div>
+            
+            <!--card 4-->
+            <div class="container right">
+                <!--card's content-->
+                <div class="content">
+                    <h1 id="Feedback">Feedback</h1>
+                    
+                    <hr>
+        
+                    <details>
+							  <summary class="readMore">how was your experience?</summary>	
+	                           <a>
+                                <!--Feedback Form-->
+                                <form name="feedback" action="feedback.php" method="post">
+                            
+                                <fieldset>
+                                        <input type="radio" name="experience" id="experience1" value="NotBad"><label for="experience1">Not  bad</label>
+                        
+                                        <input type="radio" name="experience" id="experience2" value="Good" checked><label for="experience2">Good</label>
+                        
+                                        <input type="radio" name="experience" id="experience3" value="GreatWork"><label for="experience3">Great Work</label>
+                                    <br>
+                                    
+                                    <a>Comments</a>
+                                    <br>
+                                    <textarea name="comments"  placeholder="comments" >
+                                    </textarea> 
+                                    
+                                    <br>
+
+                                </fieldset>
+                                </form>
+                                   <input type="submit" name="comments" value="Submit" onClick="return alert('Thanks for your feedback!');">
+                            
+                            </a>
+                    </details>
+                
+                
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+            </mian>
+            
+            <footer>
+                <h1>References</h1>
+                <hr>
+                <p>background: Photo by Dana DeVolk on Unsplash</p>
+                <p>crown logo: Icon pack by Icons8</p>
+                <p>audio: High Clover By Videvo</p>
+                <p>video & picture source: Yvonne Chan's</p>
+                <h1><u>Information</u></h1>
+                <p>author: Yvonne Chan</p>
+                <p>update: November 18, 2018</p>
+                <div>
+                    <audio controls>
+                        <source src="media/High-Clover-COU024801.wav" type="audio/wav">
+                    </audio>
+                </div>
+
+                
+                    
+                
+            </footer>
+            
+        </div>
+    </body>
+</html>

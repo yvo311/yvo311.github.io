@@ -1,0 +1,50 @@
+/*
+** ICT 580-26 - Assignment 3
+** November 17th, 2018
+**Yvonne Chan
+** Resposive simple blog template
+** This's styel sheet for index.html printing format
+*/
+
+/*non displayed elements*/
+/*navigation links*/
+nav{
+    display:none;
+}
+
+/*slide image*/
+#slide{
+    display:none;
+}
+
+/*social network link*/
+#social{
+    display:none;
+}
+
+/*text color & font type*/
+
+body {
+    color:black;
+}
+
+#wrapp_article article summary.readMore{
+    color:black;
+    /*font type for small text*/
+    font-family: "Times New Roman",Times,serif;
+}
+
+#wrapp_article article a {
+    color:black;
+    /*font type for large text*/
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+footer{
+    color:black;
+    /*font type for small text*/
+    font-family: "Times New Roman",Times,serif;
+}
+
+
+

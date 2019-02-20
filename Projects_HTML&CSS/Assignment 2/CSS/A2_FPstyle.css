@@ -1,0 +1,147 @@
+/*
+	ICT580 - 26
+	Assignment 2: Style sheet
+    Yvonne Chan
+	Nov 12, 2018
+*/
+
+/*Style apply to all elements*/
+    /*Document width is 600px*/
+        *{max-width:600px;}
+        *{font-family: sans-serif;}
+/*Whole page Background color*/
+    body{
+        background-color:#FFDF6B;}
+
+/*Card style*/
+      #card_content{
+            width:100%;
+            max-width:600px;
+            margin:auto;
+            position:absolute;
+            top:0%;
+            right:0px;
+            left:0px;
+            height:auto;
+            box-shadow: 0px 10px 20px -9px;}
+
+
+/*logo style*/
+#logo{
+    width:300px;
+    margin: center;}
+
+/*title style*/
+#thead_style {
+    background-color:#FFDF6B;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    box-shadow: 0px 10px 20px -15px;
+    text-align: center;
+    font-weight:bold;}
+    
+/*box background style*/
+   main{
+	   background-color: #fff;
+       display:block;
+	   margin:auto;
+	   width: 100%;
+       overflow:auto;
+       text-align: left;}
+
+/*row header style*/
+h3 {
+    width:510px;
+    height:25px;
+    background-color: #FFDF6B;
+    margin-top:5px;
+    margin-bottom:5px;
+    margin-left: 25px;
+    margin-right:25px;
+    box-shadow: 0px 10px 20px -10px;
+    font-style:italic;
+    padding-top:1px;
+    padding-bottom: 1px;}
+
+/*Label style*/
+label {
+    margin-top:5px;
+    margin-bottom:5px;
+    vertical-align: middle;
+}
+
+
+/*Row 1 List style*/
+#List_style {
+    position:relative;
+    float:left;
+    width:300px;
+    margin-left:25px;
+    margin-right:20px;
+    font-size:12px;}
+
+fieldset{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+#Off_style{
+    position:relative;
+    float:right;
+    width:25%;
+    margin-right:65px;
+    font-size:13px;
+    padding-bottom: 25px;
+    padding-left:10px;
+    padding-right:10px;
+    background-image: linear-gradient(to top,#ffffcc  95%,#FFDF6B 0%);
+    background-blend-mode:multiply;}
+
+
+
+/*Form Style*/
+#Form_label {
+			float: left;
+            margin-left:25px;
+            margin-right:50px;
+			width: 10em;
+			text-align: left;
+            font-weight: bold;
+            font-size:13px;}
+
+#form_required{
+            color:red;}
+
+/*Form input box style*/
+#Form_input {
+			margin-left: 5em;
+			margin-bottom: .5em;
+            margin-top:5px;
+            margin-bottom:5px;}
+
+#Form_input:focus{
+            border:1px solid #0C0;}
+
+
+
+/*Submit button style*/
+
+.button_submit {
+            display: block;
+            width:600px;
+            background-color: #2196f3;
+            margin: auto;
+            padding: 20px;
+            position:absolute;
+            color:snow;
+            text-align: center;
+            font-size:25px;
+            box-shadow: 0px 10px 20px -10px;}
+
+.button_submit:hover {
+    background-color:#4caf50;}
+        
+
+
+
+

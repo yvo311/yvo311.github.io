@@ -1,0 +1,190 @@
+<!--
+    ICT 580-26
+    Nov 19, 2018
+    Yvonne Chan
+    Course Project: 1st Option
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>YC Profile</title>
+        
+        <!--CSS stylesheet-->
+         <link type="text/css" rel="stylesheet" href="css/YC_profile.css">
+        
+        <!--font style-->
+        <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet"> 
+        
+    </head>
+    
+    <body>
+        <div>
+            <p class="logo">
+                <img src="https://img.icons8.com/ios/50/000000/angel.png" alt="happy face">
+                
+                <b>Yvonne's Profile</b>
+            </p>
+            <header>
+            <!--navigator-->
+                <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                
+                    <li><a href="#About_me">About me</a></li>
+                
+                    <li><a href="#Educations">Educations</a></li> 
+                
+                    <li><a href="#Projects">Projects</a></li>
+                
+                    <li><a href="#Feedback">Feedback</a></li>	
+
+                </ul>
+                </nav>
+    
+            </header>
+            
+        
+        <!--timeline-->
+        <mian>
+        <div class="timeline">
+            <!--card-->
+            <div class="container left">
+                <!--card's content-->
+                <div class="content">
+                    <h1 id="About_me">About me</h1>
+                    
+                    <hr>
+                    <p>Hi! My name is Yvonne<p>
+                    <a href="http://www.linkedin.com/in/yvonnecpk">Linkedin</a>
+                    
+                    
+                    <details>
+							  <summary class="readMore">MORE ABOUT ME</summary>	
+	                               <div>Yvonne Chan is currently studying a Front-end web development certificate program at     University of Calgary. It was in her childhood that she developed an interest in web development. She would like to develop her interest into a professional skill. </div>
+
+                                    <div>When she is not in school and when she is not occupied with completing coding projects, she enjoys spending her time developing her photography skills. A long-term goal is to build up her designing sense and improve her web development skills. Yvonne truly believes that “the future is now”.</div>		
+                    
+                    </details>
+                </div>
+            </div>
+            
+            <!--card 2-->
+            <div class="container right">
+                <!--card's content-->
+                <div class="content">
+                    <h1 id="Educations">Educations</h1>
+                    
+                    <hr>
+                    <p>DS4Y Program<p>
+                    <p>Pathway: Front End Web Development</p>
+                    <p>Date: Oct15 2018 to present</p>
+                    
+                    <details>
+							  <summary class="readMore">Courses</summary>	
+	                           <p>ICT580: HTML5 & CSS3 [Oct15-Nov19]</p>
+                               <p>ICT442: JaveScript & the DOM [Jan15-Mar19]</p>
+                               <p>ICT581: HTML5 & CSS3 with Jquery [Apr9-May9]</p>
+                               <p>ICT443: JavaScript Advanced [May21-Jun20]</p>
+                       
+                    </details>
+                </div>
+            </div>
+            
+            <!--card 3-->
+            <div class="container left">
+                <!--card's content-->
+                <div class="content">
+                      <h1 id="Projects">Projects</h1>
+                    
+                    <hr>
+                    <h10>HTML5 & CSS3 Projects</h10>
+                    <!--Projects 1-->
+                    <details>
+							  <summary class="readMore">Project 1</summary>	
+	                           <p><a href="Projects_HTML&CSS/Assignment%201/ICT_A1/newsLetter_project/main.html"><img width="223" height="307" src="images/project01.jpg" alt="News Letter Project"></a></p>
+                    </details>
+                    
+                    <!--Projects 2-->
+                    <details>
+							  <summary class="readMore">Project 2</summary>	
+	                           <p><a href="Projects_HTML&CSS\Assignment 2\A2_FPstyle.html"><img width="223" height="307" src="images/project02.jpg" alt="Feedback Project"></a></p>
+                    </details>
+                    
+                    <!--Projects 3-->
+                    <details>
+                              <summary class="readMore">Project 3</summary>    
+                               <p><a href="Projects_HTML&CSS\Assignment 3\Assignment_3\index.html"><img width="400" height="250" src="images/project03.jpg" alt="Responsive Template"></a></p>
+                    </details>
+                    <!--Projects 4-->
+                    <details>
+                              <summary class="readMore">Project 4</summary>    
+                               <p><a href="Projects_HTML&CSS\Course_Project\YC_Course_Project\YC_project.html"><img width="223" height="307" src="images/project04.jpg" alt="Final Project"></a></p>
+                    </details>
+                </div>
+            </div>
+            
+            <!--card 4-->
+            <div class="container right">
+                <!--card's content-->
+                <div class="content">
+                    <h1 id="Feedback">Feedback</h1>
+                    
+                    <hr>
+        
+                    <details>
+							  <summary class="readMore">Tell me more about you :)</summary>	
+	                           <a>
+                                <!--Feedback Form-->
+                                <form name="feedback" action="feedback.php" method="post">
+                            
+                                <fieldset>
+                                        <input type="radio" name="experience" id="experience1" value="NotInterested"><label for="experience1">Not  Interested</label>
+                        
+                                        <input type="radio" name="experience" id="experience2" value="Interested" checked><label for="experience2">Interested</label>
+                        
+                                        <input type="radio" name="experience" id="experience3" value="VeryInterested"><label for="experience3">Very Interested</label>
+                                    <br>
+                                    
+                                    <a>Comments</a>
+                                    <br>
+                                    <textarea name="comments"  placeholder="comments" >
+                                    </textarea> 
+                                    
+                                    <br>
+
+                                </fieldset>
+                                </form>
+                                   <input type="submit" name="comments" value="Submit" onClick="return alert('Thanks for your feedback!');">
+                            
+                            </a>
+                    </details>
+                
+                
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+            </mian>
+            
+            <footer>
+                <h1>References</h1>
+                <hr>
+                <p>Photo by Bernard Hermant on Unsplash</p>
+                <p>author: Yvonne Chan</p>
+                <p>update: Feb 19, 2019</p>
+                
+
+                
+                    
+                
+            </footer>
+            
+        </div>
+    </body>
+</html>

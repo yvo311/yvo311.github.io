@@ -1,0 +1,311 @@
+/*
+** ICT 580-26 - Assignment 3
+** November 17th, 2018
+** Yvonne Chan
+** Resposive simple blog template
+** This's styel sheet for index.html
+*/
+
+
+body
+{
+   margin:0 auto;
+   padding: 0;
+   color: #333333;
+   font-family: Georgia,"Times New Roman",sans-serif;
+   height: 100%;
+   min-height: 100%;
+}
+
+#page_wrapper
+{
+    background-color:#f5f5f5;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+/*********************************** Start header style */
+#logo /* header: top element */
+{
+   background-image:url('../imgs/logo.png');
+   background-repeat:no-repeat;
+   background-position:50% 100%;
+   height:112px;
+   width:100%;
+   min-width:112px;
+   text-indent:-10000px; /* the freedom of fixed layout :/ */
+   margin:0;
+   padding-top: 40px;
+}
+
+
+nav
+{
+   width:100%;
+   left: 0px;
+   position: absolute;
+   top: 0px;
+   height: 20px;
+}
+
+nav ul
+{
+   list-style-type:none;
+   height: 20px;
+   text-align:center;
+   padding:0;
+   margin:0;
+}
+
+nav li
+{
+   display: inline;
+   line-height: 130%;
+   padding:0 .3em;
+}
+
+nav li a
+{
+   color: hsl(216, 100%, 50%);
+   text-decoration:none;
+   font-style: italic;
+}
+/* End of header style */
+
+/*********************************** Start content style */
+#slide /* Start top element styel */
+{
+   text-align:center;
+}
+
+#slide img
+{
+   max-width: 400px;
+}    /* End content's top element styel */
+
+#wrapp_article /* Start article element styel */
+{
+   clear: both;
+   overflow: hidden;
+   width: 100%;
+}
+
+#wrapp_article article
+{
+   margin: 1% auto;
+   padding: 2%;
+   width: 84%;
+}
+
+#wrapp_article article a
+{
+   color: #0066FF;
+   text-decoration: none;
+}
+
+#wrapp_article article img
+{
+   display:block;
+   margin:1% auto;
+}
+
+#recent article h1
+{
+   line-height: 130%;
+   margin: 1% 0;
+}
+
+#wrapp_article article p
+{
+   font-size: 87.5%;
+   line-height: 145%;
+}
+
+#wrapp_article article summary.readMore
+{
+   color: #999;
+   display:block;
+   margin-top: 1%;
+   margin-bottom: 2%;
+}
+/* End of article element style */
+
+
+/*********************************** Start Social icons style */
+#social
+{
+   width: 250px;
+   margin: 0 auto;
+}
+
+#social ul
+{
+   list-style-type:none;
+}
+
+#social li
+{
+   margin-bottom:5px;
+   width:95px;
+   padding:0;
+   margin:0;
+   float:left;
+}
+
+#social li a
+{
+   display:block;
+   width:96px;
+   height:26px;
+   text-indent:-10000px;
+   background-image:url('../imgs/social.png');
+   background-repeat:no-repeat;
+}
+
+/** CSS/image sprities: we will cover it on week 10  **/
+.facebook {background-position:0 0;}
+.twitter {background-position:-98px 0;}
+.youtube {background-position:-196px 0;}
+.foursquare {background-position:-294px 0;}
+
+/* End of Social icons style */
+
+
+/*********************************** Start footer style */
+footer
+{
+   clear:both;
+   padding-top:2%;
+   text-align:center;
+   color:#aaa;
+   font-style:italic;
+   font-size:90%;
+}
+/* End of footer icons style */
+/*********************************** End of content style */
+
+/*THREE STYLES*/
+/* Add three media query break points here*/
+
+/* Less than 481px wide */
+@media screen and (max-width:480px){
+    
+
+        /*navigation displayed horizontally*/
+        nav.horizontal ul {
+	       display:flex;
+           justify-content: center;
+           flex-flow:wrap;}
+    
+        /*logo displayed centred*/
+        #logo{
+            background-position:center bottom;}
+    
+        /*single column articles*/
+        #wrapp_article article {
+            width:100%;
+            float:center;}
+    
+    /*all images style*/
+    img {
+        width:90%;
+        margin:1% 1% 1% 1%;
+        padding:1% 1% 1% 1%;
+        align-content: center;}
+    
+    /*social networking style*/
+    #social ul {
+        display:flex;
+        justify-content: center;
+        flex-flow:wrap;}
+    
+    /*page footer style*/
+    footer p {
+        text-align:center;
+    }    
+}
+
+        
+
+/*Between 481px and 768px wide*/
+@media screen and (min-width:481px){
+        
+        /*logo style*/
+        #logo{
+            background-position:left top;
+          }
+        
+        /*navigation displayed vertically*/
+        nav.horizontal ul {
+	       display:flex;
+           justify-content: left;
+           flex-flow:column;
+           text-align: right;}
+    
+        /*all images style*/
+        img {
+            width:100%;
+            margin:0%;
+            padding:0%;
+            align-content: center;}
+    
+        /*two column articles*/
+        #wrapp_article{
+            align-content: center;}
+        #wrapp_article article {
+            width:40%;
+            float:left;
+            margin:1%;}
+    
+        /*social networking style*/
+        #social ul {
+            display:flex;
+            justify-content: center;
+            flex-flow:wrap;}
+    
+        /*page footer style*/
+        footer p {
+            text-align:center bottom;}  
+ 
+        }
+
+/*Greater than or equal 769px wide*/
+@media screen and (min-width:769px) {
+
+   /*logo style*/
+        #logo{
+            background-position:left top;} 
+    
+    /*navigation displayed vertically*/
+        nav.horizontal ul {
+	       display:flex;
+           flex-flow:row;
+           justify-content: flex-end;}
+    
+    /*all images style*/
+        img {
+            width:100%;
+            margin:0%;
+            padding:0%;
+            align-content: center;}
+    
+    /*four column articles*/
+        #wrapp_article article{
+            width:19%;
+            float:left;
+            margin:1%;}
+    
+    
+        /*social networking style*/
+        #social ul {
+            display:flex;
+            flex-flow:row;
+            justify-content: center;}
+    
+        /*page footer style*/
+        footer p {
+            text-align:center bottom;}  
+    
+    }

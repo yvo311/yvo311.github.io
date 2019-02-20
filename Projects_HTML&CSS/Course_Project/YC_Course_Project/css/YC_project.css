@@ -1,0 +1,206 @@
+/*
+**  ICT 580-26
+**  Nov 19, 2018
+**  Yvonne Chan
+**  Course Project- Style sheet
+*/
+
+/*Font style*/
+*{font-family: 'Arima Madurai', cursive, sans-serif;}
+/*Maximum width*/
+    /*Desktop: minimum width =992px or 1200px*/
+*{max-width:1200px;}
+
+/*Background*/
+body{
+    background-image:url('../images/background.jpg');
+    background-color:aliceblue;
+    background-repeat:no-repeat;
+    background-size:cover;}
+
+
+/*Crown logo style*/
+.logo {
+    position:relative;
+    text-align: center;
+    font-size:30px;
+}
+
+img{
+    vertical-align:middle;
+}
+     
+/*Navagation*/
+nav{
+    width:100%;
+    position:relative;
+    box-shadow: 0px 10px 20px -5px;}
+
+nav ul{
+    list-style-type:none;
+    height:50%;
+    text-align:center;
+    padding:0px;
+    margin:0px;
+    background-color:rgba(25, 25, 25,0.25);}
+
+nav li{
+    display:inline-block;
+    line-height:130%;
+    padding:5px;
+    border:1px solid;
+    font-size:20px;
+    margin:2%;}
+
+nav li a
+{
+   color: white;
+   text-decoration:none;
+   font-weight: 600;}
+
+/*Timeline*/
+.timeline{
+    position: relative;
+    margin-top: auto;
+    top:50px;
+    max-width: 960px;
+    margin: 0 auto;
+    border:1px dashed;}
+
+/*draw the timeline*/
+.timeline:after{
+    content:"";
+    width: 10px;
+    background-color:rgba(60, 0, 0,0.90);
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+}
+
+/*container*/
+.container{
+    padding:5px;
+    position:relative;
+    background-color:rgba(0, 0, 0,0.25);
+    width:50%;
+    box-shadow: 0px 10px 20px -10px;
+}
+
+.container::after{
+    content:"";
+    width:25px;
+    height:25px;
+    background-color:rgba(60, 0, 0,0.50);
+    border:2px solid rgba(60, 0, 0,0.90);
+    position:absolute;
+    right:-7px;
+    top:15px;
+    z-index:1; 
+}
+
+.container::before{
+    content:"";
+    width:25px;
+    height:25px;
+    background-color:rgba(250, 250, 250,0.50);
+    border:2px solid rgba(60, 0, 0,0.90);
+    position:absolute;
+    right:96.2%;
+    top:15px;
+    z-index:1;
+    
+}
+
+/*content style*/
+.content{
+    text-align: center;
+    color:white;
+}
+    
+/*set left*/
+.left{
+    left:0;
+}
+/*set right*/
+.right{
+    left:50%;
+}
+
+/*Footer style*/
+footer
+{
+   background-color:rgba(25, 25, 25,0.25);
+   height:50%;
+   margin-top:10%;
+   padding:0% 5%;
+   clear:both;
+   padding-top:1%;
+   text-align:right;
+   color:rgba(25, 25, 25,0.50);
+   font-size:10px;
+   position:relative;}
+
+/**--------------------------------------**/
+
+/*Two size screens*/
+/*Desktop: minimum width =992px or 1200px*/
+    /*max-width of all element*/
+
+/*Mobile: minimum width =600px*/
+@media screen and (max-width:600px){
+    
+    /*logo style*/
+    .logo {
+        font-size:90%;}
+    
+    /*navigation list style*/
+    nav ul{
+    margin:5% 0%;}
+
+    nav li{
+    line-height:50%;
+    font-size:90%;
+    border:2px grey dashed;}
+        
+    /*container style*/
+    .container{
+        width:100%;
+        font-size:90%;
+        margin:5% 0%;}
+    
+    .right{
+        left:0;}
+    
+    /*timeline style*/
+    .timeline{
+    border:0px dashed;
+    margin-top:-10%;}
+    
+    .timeline:after{
+    background-color:rgba(100, 60, 100,1);
+    left:100%;}
+    
+    .container::before{
+    width:0%;
+    height:0%;
+    border:0px;}
+    
+    footer{
+        margin-top:20%;
+        font-size:60%
+    }
+}
+
+
+
+    
+    
+/*Credit*/
+/*
+background: Photo by Dana DeVolk on Unsplash
+crown logo: Icon pack by Icons8
+audio: High Clover By Videvo
+video & picture source: Yvonne Chan's
+
+*/

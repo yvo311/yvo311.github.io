@@ -1,0 +1,167 @@
+/*Assignment 1: main.css file-menu*/
+/*
+    Yvonne Chan
+    ICT580-26
+    October 29, 2018
+*/
+
+/*Style apply to all elements*/
+    /*Document width is 580px*/
+        *{width:580px;}
+    /*Center the page at the middle*/
+        *{margin:auto;}
+
+    /*All font family type*/
+        *{font-family:'Shadows Into Light',cursive;}
+    /*Set all text color*/
+        *{color:#333;}
+
+/*Header section background setting*/
+    header {
+	    background-color: #FFDF6B;
+	    display:block;
+        background-size:cover;
+        
+    }
+
+/*Body-main background setting*/
+   main{
+	   background-color: #ffcc11;
+       display:block;
+	   margin:auto;
+	   width: 100%;
+    }
+
+/*footer background setting*/
+    /*to seperate the coupons and the main content*/
+    footer {
+        background-color:#fff;
+        margin:5px;
+    }
+
+/*logo style [ignore]*/
+    #logo{
+        margin-left:50px;
+        margin-top:15px;
+        margin-bottom:15px;
+        width:300px;
+    }
+
+/*Style navigation list*/
+    /*font size 12px, 
+      font style bold, 
+      border size 3px*/
+    nav {
+        border-top:3px solid black;
+        border-bottom:3px solid black;
+        width:50%;
+        margin-left:50px;
+    }
+
+    #nav_list ul{
+        list-style-type:none;
+        margin-left:-50px;
+    }
+
+    #nav_list ul li{
+        display:inline;
+        height: 46px; 
+    }
+
+    #nav_list ul li a{
+        font-weight:bold;
+        text-decoration: none;
+        font-size:12px;
+        margin-left:10px;
+    }
+
+/*Font size for HOT Tacos headline*/
+    /*font size 50px*/
+    #HOT_Tacos_size{
+        font-size:50px;
+        padding-left:50px;
+        align-content: center;
+        padding-top:5px;
+        font-weight:bold;
+    }
+
+/*Plate.jpg image style*/
+    /*image width:300px,
+            height:229px*/
+    #plate_style{
+        height:229px;
+        width:300px;
+        float:right;
+        position:relative;
+        top:100px;
+        left:0px;
+    }
+
+/*Information style*/
+    /*font size 20px
+      font color #333*/
+    #info_ul{    
+        padding-top:150px;
+        padding-bottom:50px;
+    }
+    #info_li{
+        font-size:20px;
+        list-style-type:none;
+    }
+
+/*Coupon style*/
+
+
+
+    .li_block{
+        display:block;
+    }
+
+    /*Save style*/
+        /*font size 60px
+          width 50%*/
+
+    #save_style_50{
+        font-size:60px;
+        width:50%;
+        margin-left:50px;
+        vertical-align:middle;
+    }
+
+    #save_style_75{
+        font-size:60px;
+        width:50%;
+        margin-left:110px;
+        vertical-align:middle;
+    }
+    /*Valid date style*/
+        /*font size 10px
+          width 70%*/
+    .valid_date_style{
+        font-size:10px;
+        width:75%;
+  
+    }
+
+/*Border & coupon background style*/
+    /*border size 3px
+      border style dashed*/
+    /*50% coupon*/
+    #save_50{
+        border:5px;
+        border-style: dashed;
+        margin-left:-50px;
+        margin-top:1px;
+        background-image: linear-gradient(to right,#ffcc11 50%,white 0%);
+        background-blend-mode:multiply;
+    }
+
+    /*70% coupon*/
+    #save_75{
+        border:5px;
+        border-style: dashed;
+        margin-left:-50px;
+        margin-top:1px;
+        background-image: linear-gradient(to right,#ffcc11 75%,white 0%);
+        background-blend-mode:multiply;
+    }
